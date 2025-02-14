@@ -1,5 +1,8 @@
 pipline {
     agent any
+    tools{
+        maven 'maven'
+    }
     stage ('Build'){
         steps{
             sh 'mvn clean package'
